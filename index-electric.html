@@ -3,22 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- PWA Meta Tags -->
-    <meta name="theme-color" content="#8B0000">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Mozda Academy">
-    <meta name="description" content="Professional kurslar - Shopify, Uzum Market, Xitoy, AI va boshqalar. O'zbek tilida to'liq ta'lim.">
-    
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="manifest.json">
-    
-    <!-- Icons -->
-    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
-    <link rel="apple-touch-icon" href="icon-192.png">
-    
     <title>Mozda Academy - Professional Kurslar</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
@@ -1282,7 +1266,7 @@
                     </svg>
                 </div>
                 <h3 class="course-title">Shopify Kurslari</h3>
-                <div class="course-price">299 ming so'm</div>
+                <div class="course-price">199 ming so'm</div>
                 <ul class="course-list">
                     <li>Printify kursi</li>
                     <li>Dropshipping</li>
@@ -1314,7 +1298,7 @@
                     </svg>
                 </div>
                 <h3 class="course-title">Uzum Market</h3>
-                <div class="course-price">199 ming so'm</div>
+                <div class="course-price">99 ming so'm</div>
                 <ul class="course-list">
                     <li>Uzum Premium</li>
                     <li>Mahsulot joylash</li>
@@ -1346,7 +1330,7 @@
                     </svg>
                 </div>
                 <h3 class="course-title">Xitoy Kurslari</h3>
-                <div class="course-price">99 ming so'm</div>
+                <div class="course-price">59 ming so'm</div>
                 <ul class="course-list">
                     <li>1688 zakaz</li>
                     <li>Taobao zakaz</li>
@@ -1377,7 +1361,7 @@
                     </svg>
                 </div>
                 <h3 class="course-title">Turkiya Kursi</h3>
-                <div class="course-price">99 ming so'm</div>
+                <div class="course-price">59 ming so'm</div>
                 <ul class="course-list">
                     <li>Optom kanallar</li>
                     <li>Zakaz qilish</li>
@@ -1841,10 +1825,10 @@
                         </svg>
                         Chegirmali Taklif
                     </div>
-                    <h2 class="package-title">6 ta Kurs<br>Jamlanmasi</h2>
+                    <h2 class="package-title">5 ta Kurs<br>Jamlanmasi</h2>
                     <div class="price-box">
-                        <div class="old-price">895,000 so'm</div>
-                        <div class="new-price">397 ming so'm</div>
+                        <div class="old-price">475,000 so'm</div>
+                        <div class="new-price">190,000 so'm</div>
                     </div>
                     <div class="countdown-wrapper">
                         <div class="countdown-label">⏰ Chegirma tugaydi</div>
@@ -1872,11 +1856,11 @@
                 <div class="package-right">
                     <div class="included-title">Jamlanmada nima bor</div>
                     <ul class="package-list">
-                        <li>Shopify kurslari (299 ming)</li>
-                        <li>Uzum Market (199 ming)</li>
-                        <li>Xitoy kurslari (99 ming)</li>
-                        <li>Turkiya kursi (99 ming)</li>
-                        <li>Marketing (99 ming)</li>
+                        <li>Shopify kurslari (199 ming)</li>
+                        <li>Uzum Market (99 ming)</li>
+                        <li>Xitoy kurslari (59 ming)</li>
+                        <li>Turkiya kursi (59 ming)</li>
+                        <li>Marketing (59 ming)</li>
                     </ul>
                     <div class="bonus-section">
                         <div class="bonus-title">
@@ -1900,11 +1884,15 @@
                         <div class="bonus-items">
                             • Sun'iy Intellekt Kursi<br>
                             • Mukammal Telegram Bot Yaratish<br>
+                            • Shopify dropshipping bonus<br>
                             • Shopify Maxsus Ma'lumotlar<br>
-                            • 4000+ AI & Chat Bot Worklov Sxemalari
+                            • Target pro kursi<br>
+                            • 4000+ AI & Chat Bot Worklov Sxemalari<br>
+                            • 3 ta savolga Kurs Asoschisini aniq javob berishi<br>
+
                         </div>
                     </div>
-                    <button class="package-btn" onclick="openModal('To\'liq Paket + Bonuslar', '397,000')">🚀 Hoziroq Sotib Oling</button>
+                    <button class="package-btn" onclick="openModal('To\'liq Paket + Bonuslar', '190,000')">🚀 Hoziroq Sotib Oling</button>
                 </div>
             </div>
         </div>
@@ -1928,7 +1916,7 @@
             <form id="purchaseForm">
                 <div class="form-group">
                     <label>Ism va Familiya</label>
-                    <input type="text" id="fullName" required placeholder="Akmal Karimov">
+                    <input type="text" id="fullName" required placeholder="Shaxzod Odilov">
                 </div>
                 <div class="form-group">
                     <label>Telefon raqam</label>
@@ -1997,59 +1985,7 @@
                 event.target.style.display = 'none';
             }
         }
-
-        // PWA Service Worker Registration
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('service-worker.js')
-                    .then(reg => console.log('Service Worker registered:', reg))
-                    .catch(err => console.log('Service Worker registration failed:', err));
-            });
-        }
-
-        // PWA Install Prompt
-        let deferredPrompt;
-        const installBtn = document.createElement('button');
-        installBtn.innerHTML = '📱 Ilovani O\'rnatish';
-        installBtn.style.cssText = `
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            padding: 15px 30px;
-            background: linear-gradient(135deg, #8B0000, #FF0000);
-            color: white;
-            border: none;
-            border-radius: 50px;
-            font-size: 16px;
-            font-weight: 700;
-            cursor: pointer;
-            box-shadow: 0 10px 40px rgba(255, 0, 0, 0.4);
-            z-index: 10000;
-            display: none;
-            animation: bounce 2s infinite;
-        `;
-
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            installBtn.style.display = 'block';
-            document.body.appendChild(installBtn);
-        });
-
-        installBtn.addEventListener('click', async () => {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                const { outcome } = await deferredPrompt.userChoice;
-                console.log(`User response: ${outcome}`);
-                deferredPrompt = null;
-                installBtn.style.display = 'none';
-            }
-        });
-
-        window.addEventListener('appinstalled', () => {
-            console.log('PWA installed successfully!');
-            installBtn.style.display = 'none';
-        });
     </script>
 </body>
 </html>
+
